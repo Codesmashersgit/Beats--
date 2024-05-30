@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: black;
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+
+
+
+}
+
+.nav .h1 {
+    padding: 25px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+.nav p {
+    font-size: 50px;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.about {
+    margin-left: 300px;
+}
+
+.about ul a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+
+}
+ .search{
+    background-color: cadetblue;
+    width: 330px;
+  height: 44px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+   
+
+ }
+ .search input {
+    all: unset;
+    font: 15px ;
+    font-family: cursive;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+   padding: 3px 10px;
+ }
+ .search i{
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+
+ }
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 40px;
+
+}
+
+.details i {
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+.cart i {
+    font-size: 30px;
+    cursor: pointer;
+
+}
+#count{
+    font-size: 10px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:23% ;
+    right:6%;
+    border-radius: 50%;
+    padding: 5px;
+
+
+}
+
+.user i {
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.images{
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.images img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    margin: 20px 0 0 10%;
+    cursor: pointer;
+
+
+}
+
+.images h1 {
+    text-transform: uppercase;
+    font-size: 5vw;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+}
+
+.images p {
+    font-size: 20px;
+
+
+}
+
+button {
+    position: absolute;
+    top: 68%;
+    left: 60%;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    animation: animation 5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes animation {
+    0% {
+        border: 5px solid red;
+
+    }
+
+    15% {
+        border: 5px solid green;
+
+    }
+
+    30% {
+        border: 5px solid white;
+
+    }
+
+    45% {
+        border: 5px solid salmon;
+
+    }
+
+    75% {
+        border: 5px solid #333;
+
+
+    }
+
+    100% {
+        border: 5px solid yellow;
+
+
+    }
+}
+
+.content img {
+    padding: 40px;
+    cursor: pointer;
+
+}
+
+#swag {
+    height: 679px;
+    width: 679px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.context{
+    display: inline-block;
+    
+   
+
+}
+
+.context img {
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 7%;
+  
+   
+
+}
+
+center h1 {
+    font-size: 70px;
+    font-family: cursive;
+    text-transform: uppercase;
+
+}
+
+
+.context h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    margin-left: 15%;
+
+}
+
+
+#price {
+    margin: 10px 0 0 35%;
+    font-size: 25px;
+    color: black;
+}
+
+#offers {
+    text-decoration: line-through;
+    
+    font-size: 20px;
+}
+
+#discount {
+    font-size: 20px;
+    color: green;
+
+}
+
+.context2 img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    float: right;
+    cursor: pointer;
+    padding: 30px;
+
+}
+
+.context2 h1 {
+    padding: 250px 0 0 80px;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.context2 p {
+    font-size: 20px;
+    padding-left: 20%;
+}
+
+@media screen and (max-width:480px) {
+    center p{
+        display: none;
+     }
+    .about{
+       display: none;
+    }
+    
+    .nav{
+        margin: 0;
+        height: 150px;
+
+    }
+    .h1 span{
+        margin: 0;
+        font-size: 10vw;
+
+    }
+    
+}
+.context p{
+  margin: 20px 0 0 40%;
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 10px;
+ padding: 10px 0 10px 50px;
+ cursor: pointer;
+}
+
+button #moon{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
